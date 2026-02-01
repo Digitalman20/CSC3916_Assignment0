@@ -1,19 +1,19 @@
 Request Headers
-Authorization: 
-User-Agent: PostmanRuntime/7.51.1
-Accept: */*
-Cache-Control: no-cache
+Authorization: - Usually has the type and the token to authenticate, but we didn't use any for this.
+User-Agent: PostmanRuntime/7.51.1 - Software version making the request
+Accept: */* - The type of response format. */* means any type is accepted
+Cache-Control: no-cache - Doesn't allow for the use of cached data
 Postman-Token: dc1331c3-9bd4-4baa-83ae-db996ecb35c8
-Host: openlibrary.org
-Accept-Encoding: gzip, deflate, br
+Host: openlibrary.org - Domain
+Accept-Encoding: gzip, deflate, br - Allows the mentioned types of encoding formats
 Connection: keep-alive
 
 Response Headers
-Server: nginx/1.28.1
+Server: nginx/1.28.1 - Server side software
 Date: Sun, 01 Feb 2026 01:57:32 GMT
-Content-Type: application/json
-Transfer-Encoding: chunked
-Connection: keep-alive
-x-served-by: FastAPI
-Referrer-Policy: no-referrer-when-downgrade
-Content-Encoding: gzip
+Content-Type: application/json - Response return type
+Transfer-Encoding: chunked - Sending the response in multiple chunks
+Connection: keep-alive - Confirming an open Connection
+x-served-by: FastAPI - Framework
+Referrer-Policy: no-referrer-when-downgrade 
+Content-Encoding: gzip - The body is compressed and needs to be decompressed to access it

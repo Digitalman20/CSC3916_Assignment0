@@ -1,7 +1,7 @@
 const axios = require('axios')
 
 module.exports = async (phrase) => {
-    const results = await axios.get('https://www.googleapis.com/books/v1/volumes', {
+    const results = await axios.get('https://openlibrary.org/search.json', {
         params: {
             format: 'json',
             q: `${phrase}`
@@ -20,5 +20,5 @@ module.exports = async (phrase) => {
     }
 
     //TODO: return the formattedObject
-    return JSON.stringify(results.data);
+    return formattedObj;
 }
